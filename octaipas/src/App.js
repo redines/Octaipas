@@ -1,22 +1,31 @@
 import React, { Component } from 'react';
+import Divcom from './components/divcom';
+
 
 class App extends Component {
+  state = {
+  drinks: [
+    {
+    id: "1",
+    name: "vodka"
+  },
+  {
+    id: "2",
+    name: "burbon"
+  }
+]
+}
+
   render() {
+    console.log(this.state.drinks);
     return (
       <div className="App">
         <header className="App-header">
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            hej
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
         </header>
+        <Divcom drinks={this.state.drinks}/>
       </div>
     );
   }
