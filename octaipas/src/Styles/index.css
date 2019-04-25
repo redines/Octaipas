@@ -1,9 +1,33 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+/*GLOBAL STYLING*/
 *{
-    font-family: 'Roboto';
+    font-family: 'Roboto',sans-serif;
+    margin:0;
+    padding:0;
 }
 
-h1 {
-    color:red;
+/*Site colors*/
+:root{
+    --main-bg-color: rgb(236, 230, 231);
+    --header-bg-color: rgba(162, 54, 69, 1);
+}
+
+body{
+    background-color: var(--main-bg-color);
+}
+
+
+
+/*HEADER STYLING*/
+header h1 {
+    background-color: var(--header-bg-color);
+    color: rgb(241, 227, 229);
+    text-align: center;
+}
+
+/*LIST OF DRINKS STYLING*/
+.center{
+    width: 50%;
+    margin: 0 auto;
 }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Divcom from './components/divcom';
+import DrinkList from './components/DrinkList_comp';
+import Header from './components/header_comp';
 
 
 class App extends Component {
@@ -17,16 +18,11 @@ class App extends Component {
 }
 
   render() {
-    console.log(this.state.drinks);
     return (
-      <div className="App">
-        <header className="App-header">
-          <p>
-            hej
-          </p>
-        </header>
-        <Divcom drinks={this.state.drinks}/>
-      </div>
+      <>
+        <Header/>
+        <DrinkList drinks={this.state.drinks}/>
+      </>
     );
   }
 }
